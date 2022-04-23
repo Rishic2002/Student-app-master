@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:student_app/drawer/timetable.dart';
 import 'package:student_app/home.dart';
+import 'drawer/attendanceReports.dart';
+import 'drawer/backupRestore.dart';
+import 'drawer/classReports.dart';
 import 'signup.dart';
 import 'profile.dart';
 import 'home.dart';
+import 'drawer/classes.dart';
 
 final FirebaseAuth _auth = FirebaseAuth.instance;
 
@@ -30,7 +35,13 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         '/signup': (BuildContext context) => const SignupPage(),
         '/profile': (BuildContext context) => const ProfilePage(),
-        '/home': (BuildContext context) => const HomePage()
+        '/home': (BuildContext context) => const HomePage(),
+        '/classes': (BuildContext context) => const ClassesPage(),
+        '/classReports': (BuildContext context) => const ClassReportsPage(),
+        '/timetable': (BuildContext context) => const TimeTablePage(),
+        '/backupRestore': (BuildContext context) => const BackupRestorePage(),
+        '/attendanceReports': (BuildContext context) =>
+            const AttendanceReportsPage(),
       },
     );
   }
