@@ -12,6 +12,7 @@ import 'profile.dart';
 import 'home.dart';
 import 'drawer/classes.dart';
 
+
 final FirebaseAuth _auth = FirebaseAuth.instance;
 
 void main() async {
