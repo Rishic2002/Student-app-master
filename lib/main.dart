@@ -39,6 +39,7 @@ class MyApp extends StatelessWidget {
         '/classes': (BuildContext context) => const ClassesPage(),
         '/classReports': (BuildContext context) => const ClassReportsPage(),
         '/timetable': (BuildContext context) => const TimeTablePage(),
+        '/addclasses': (BuildContext context) => const AddClassesPage(),
         '/backupRestore': (BuildContext context) => const BackupRestorePage(),
         '/attendanceReports': (BuildContext context) =>
             const AttendanceReportsPage(),
