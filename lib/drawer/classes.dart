@@ -17,7 +17,18 @@ class _ClassesState extends State<ClassesPage> {
       appBar: AppBar(
           title: const Text('CLASSES', style: TextStyle(color: Colors.black)),
           backgroundColor: Colors.yellow),
-      
+      body: Align(
+        alignment: Alignment.bottomRight,
+        child: FloatingActionButton(
+          child: Icon(Icons.add),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const AddClassesPage()),
+            );
+          },
+        ),
+      ),
       drawer: MyDrawer(),
     );
   }
