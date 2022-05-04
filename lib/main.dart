@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:student_app/drawer/timetable.dart';
 import 'package:student_app/home.dart';
+import 'drawer/addclass.dart';
 import 'drawer/attendanceReports.dart';
 import 'drawer/backupRestore.dart';
 import 'drawer/classReports.dart';

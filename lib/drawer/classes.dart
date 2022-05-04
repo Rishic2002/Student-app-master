@@ -2,6 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../drawer.dart';
+import 'addclass.dart';
 
 class ClassesPage extends StatefulWidget {
   const ClassesPage({Key? key}) : super(key: key);
