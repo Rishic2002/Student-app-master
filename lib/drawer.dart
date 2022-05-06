@@ -133,7 +133,7 @@ class MyDrawer extends StatelessWidget {
 
             ListTile(
               onTap: () {
-                Navigator.of(context).pushNamed("/signup");
+                Navigator.of(context).pushNamed("/login");
               },
               leading: Icon(
                 CupertinoIcons.fullscreen_exit,
